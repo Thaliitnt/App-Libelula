@@ -1,10 +1,39 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
-export default function Shoes() {
+
+export default function Shoes(props) {
  return (
-   <View>
-       <Text>Shoes</Text>
-   </View>
+   <TouchableOpacity style={Style.container}>
+
+     <Image
+      source={props.img}
+      style={Style.shoesImg}
+     />
+    <Text style={Style.shoesText}>
+      {props.cost2}
+    </Text>
+    <Text style={Style.shoesTxtPreco}>
+      {props.cost}
+    </Text>
+   </TouchableOpacity>
   );
 }
+
+const Style = StyleSheet.create({
+    container:{
+      paddingVertical: '10%',
+      alingItems: 'center',
+      justifyContent: 'center'
+    },
+    shoesImg:{
+      width: 170,
+      height: 170
+    },
+    shoesText:{
+      fontSize:17,
+    },
+    shoesTxtPreco:{
+      fontSize: 19,
+    }
+})
