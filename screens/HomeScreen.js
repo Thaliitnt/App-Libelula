@@ -1,56 +1,32 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
-import {Button, Text, TextInput, Appbar, Searchbar  } from 'react-native-paper';
+import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity } from 'react-native';
+import {Button, TextInput, Appbar, Searchbar  } from 'react-native-paper';
 
-const styles = StyleSheet.create({
-  top: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: 0,
-  },
-});
+
+import Shoes from '../src/components/Shoes'
 
 function HomeScreen({ navigation }) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Appbar style={styles.top}>
-
-    <Appbar.Action icon="menu" onPress={() => console.log('Pressed menu')} />
- 
-   <Appbar.Action
-     icon=""
-     onPress={() => console.log('Pressed archive')}
-    />
-    
-    <Appbar.Action
-     icon=""
-      onPress={() => console.log('Pressed delete')}
-    />
-     
-  </Appbar>
-      <Text>Home Screen</Text>
+    <View style={styles.container}>
       
-      <TextInput
-      mode="outlined"
-      label="Login"
-      placeholder="Type something"
-      right={<TextInput.Affix text="/100" />}
-    />
-     <TextInput
-      label="Password"
-      secureTextEntry
-      right={<TextInput.Icon name="eye" />}
-    />
+      <ScrollView>
+        <View style={{flexDirection: 'row', justifyContent:'space-around'}}>
+          <Shoes/>
 
-    <Button mode='contained' icon='content-save'>
-        Salvar
-      </Button>
-      
+          <Shoes/>
+
+        </View>
+     </ScrollView>
     
+
     </View>
   );
 }
 
-
+const styles = StyleSheet.create({
+    container:{
+      flex: 2,
+      width: '100%'
+    }
+})
 export default HomeScreen;
