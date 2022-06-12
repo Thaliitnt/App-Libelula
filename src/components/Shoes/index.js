@@ -4,7 +4,7 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 export default function Shoes(props) {
  return (
-   <TouchableOpacity style={Style.container}>
+   <TouchableOpacity style={Style.container} onPress={props.onClick}>
 
      <Image
       source={props.img}

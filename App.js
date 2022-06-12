@@ -9,10 +9,11 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 
 //Importando as telas --------------------------------
-import FavoritosScreen from './screens/FavoritosScreen'
-import HomeScreen from './screens/HomeScreen'
-import CarrinhoScreen from './screens/CarrinhoScreen'
-import PerfilScreen from './screens/PerfilScreen'
+import FavoritosScreen from './screens/FavoritosScreen';
+import HomeScreen from './screens/HomeScreen';
+import CarrinhoScreen from './screens/CarrinhoScreen';
+import PerfilScreen from './screens/PerfilScreen';
+import Details from './screens/Details';
 
 const CombinedDefaultTheme = {
   ...PaperDefaultTheme,
