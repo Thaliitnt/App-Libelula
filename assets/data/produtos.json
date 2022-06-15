@@ -1,0 +1,32 @@
+[
+    {
+        "nome": "Anel Coração",
+        "preco": "R$ 70,00",
+        "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/anel.jpg?raw=true"
+    },
+    {
+        "nome": "Relógio Feminino",
+        "preco": "R$ 200,00",
+        "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/pulseira.jpg?raw=true"
+    },
+    {
+        "nome": "Anel Coração",
+        "preco": "R$ 70,00",
+        "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/anel.jpg?raw=true"
+    },
+    {
+        "nome": "Relógio Feminino",
+        "preco": "R$ 200,00",
+        "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/pulseira.jpg?raw=true"
+    },
+    {
+        "nome": "Anel Coração",
+        "preco": "R$ 70,00",
+        "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/anel.jpg?raw=true"
+    },
+    {
+        "nome": "Relógio Feminino",
+        "preco": "R$ 200,00",
+        "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/pulseira.jpg?raw=true"
+    }
+]
