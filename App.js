@@ -11,9 +11,10 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 //Importando as telas --------------------------------
 import FavoritosScreen from './screens/FavoritosScreen';
-import HomeScreen from './screens/HomeScreen';
+//import HomeScreen from './screens/HomeScreen';
 import CarrinhoScreen from './screens/CarrinhoScreen';
 import PerfilScreen from './screens/PerfilScreen';
+import TabNavigator from './navigators/TabNavigator';
 
 const CombinedDefaultTheme = {
   ...PaperDefaultTheme,
@@ -37,7 +38,7 @@ function App() {
       <NavigationContainer theme={CombinedDefaultTheme}>
 
         <Tab.Navigator initialRouteName="Home">
-          <Tab.Screen name="Home" component={HomeScreen} options={{
+          <Tab.Screen name="Home" component={TabNavigator} options={{
             tabBarIcon: ({ focused, color }) => {
               return (
                 <FontAwesome name="home" size={24} color={color} />
