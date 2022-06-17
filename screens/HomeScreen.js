@@ -8,7 +8,6 @@ import Shoes from '../src/components/Shoes'
 import produtos from '../assets/data/produtos.json';
 
 function HomeScreen({ navigation }) {
-  //const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
