@@ -1,34 +1,18 @@
-import React from 'react'
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-const Tab = createMaterialBottomTabNavigator();
+import HomeScreen from '../screens/HomeScreen';
+import DetailsScreen from '../screens/Details';
 
-const TabNavigator = () => {
-    return (
-        <Tab.Navigator initialRouteName="Home">
-            <Tab.Screen name="Home" component={HomeScreen} options={{
-                tabBarIcon: ({ focused, color }) => {
-                    return (
-                        <FontAwesome name="home" size={24} color={color} />
-                    );
-                }
-            }} />
-            <Tab.Screen name="Details" component={DetailsScreen} options={{
-                tabBarIcon: ({ focused, color }) => {
-                    return (
-                        <FontAwesome name="info" size={24} color={color} />
-                    );
-                }
-            }} />
-            <Tab.Screen name="Settings" component={SettingsScreen} options={{
-                tabBarIcon: ({ focused, color }) => {
-                    return (
-                        <FontAwesome name="gear" size={24} color={color} />
-                    );
-                }
-            }} />
-        </Tab.Navigator>
-    )
-}
+const DetailsStackNavigator = () => {
+  const Stack = createNativeStackNavigator();
 
-export default TabNavigator
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Details" component={DetailsScreen} />
+    </Stack.Navigator>
+  );
+};
+
+export default DetailsStackNavigator;

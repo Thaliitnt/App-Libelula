@@ -8,12 +8,12 @@ import { FontAwesome } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 
 
+
 //Importando as telas --------------------------------
 import FavoritosScreen from './screens/FavoritosScreen';
 import HomeScreen from './screens/HomeScreen';
 import CarrinhoScreen from './screens/CarrinhoScreen';
 import PerfilScreen from './screens/PerfilScreen';
-import Details from './screens/Details';
 
 const CombinedDefaultTheme = {
   ...PaperDefaultTheme,
@@ -29,7 +29,7 @@ const CombinedDefaultTheme = {
 };
 
 const Tab = createMaterialBottomTabNavigator();
-//const Tab = createBottomTabNavigator();
+
 
 function App() {
   return (
@@ -41,9 +41,11 @@ function App() {
             tabBarIcon: ({ focused, color }) => {
               return (
                 <FontAwesome name="home" size={24} color={color} />
-              );
+                
+              )
             }
-          }} />
+          }}
+          />
 
           <Tab.Screen name="Favoritos" component={FavoritosScreen} options={{
             tabBarIcon: ({ focused, color }) => {

@@ -1,8 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 
 export default function screens() {
     return (
-        <View />
+        <View>
+            <Text>
+                Tela Detalhes
+            </Text>
+        </View>
     );
 }

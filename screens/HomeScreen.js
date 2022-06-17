@@ -2,20 +2,19 @@ import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity, FlatList } from 'react-native';
 //import {Button, TextInput, Appbar, Searchbar  } from 'react-native-paper';
 
-// import { useNavigation } from '@react-navigation/native';
 
 import Shoes from '../src/components/Shoes'
 
 import produtos from '../assets/data/produtos.json';
 
 function HomeScreen({ navigation }) {
-  // const navigation = useNavigation();
+  //const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
       <FlatList data={produtos} numColumns={2} renderItem={({ item }) => (
         < Shoes img={{ uri: item.foto }} cost={item.preco}
-          cost2={item.nome} onClick={() => alert('CLICOU')}>
+          cost2={item.nome} onClick={() => navigation.navigate('Details')}>
         </Shoes>
       )
       }>
