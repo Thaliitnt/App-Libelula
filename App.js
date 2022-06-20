@@ -24,6 +24,7 @@ const CombinedDefaultTheme = {
     ...NavigationDefaultTheme.colors,
     primary: '#FFB5A7',
     accent: '#FFFFFF',
+    background: '#FFFFFF'
 
 
   },
@@ -42,7 +43,7 @@ function App() {
             tabBarIcon: ({ focused, color }) => {
               return (
                 <FontAwesome name="home" size={24} color={color} />
-                
+
               )
             }
           }}
@@ -51,24 +52,24 @@ function App() {
           <Tab.Screen name="Favoritos" component={FavoritosScreen} options={{
             tabBarIcon: ({ focused, color }) => {
               return (
-                <FontAwesome name="heart" size={24} color={color} />              );
+                <FontAwesome name="heart" size={24} color={color} />);
             }
           }} />
 
           <Tab.Screen name="Carrinho" component={CarrinhoScreen} options={{
             tabBarIcon: ({ focused, color }) => {
               return (
-              <MaterialIcons name="shopping-cart" size={24} color={color}/>              );
+                <MaterialIcons name="shopping-cart" size={24} color={color} />);
             }
           }} />
 
           <Tab.Screen name="Perfil" component={PerfilScreen} options={{
             tabBarIcon: ({ focused, color }) => {
               return (
-              <FontAwesome name="user-circle" size={24} color={color} />         );
-           }
+                <FontAwesome name="user-circle" size={24} color={color} />);
+            }
           }} />
-  
+
         </Tab.Navigator>
       </NavigationContainer>
     </PaperProvider >

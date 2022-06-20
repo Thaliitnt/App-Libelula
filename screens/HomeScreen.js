@@ -13,7 +13,7 @@ function HomeScreen({ navigation }) {
     <View style={styles.container}>
       <FlatList data={produtos} numColumns={2} renderItem={({ item }) => (
         < Shoes img={{ uri: item.foto }} cost={item.preco}
-          cost2={item.nome} onClick={() => navigation.navigate('Details')}>
+          cost2={item.nome} onClick={() => navigation.navigate('Details', { "produto": item })}>
         </Shoes>
       )
       }>
