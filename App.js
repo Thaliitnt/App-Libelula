@@ -15,6 +15,7 @@ import FavoritosScreen from './screens/FavoritosScreen';
 import CarrinhoScreen from './screens/CarrinhoScreen';
 import PerfilScreen from './screens/PerfilScreen';
 import TabNavigator from './navigators/TabNavigator';
+import drawerNavigator from './navigators/drawerNavigator';
 
 const CombinedDefaultTheme = {
   ...PaperDefaultTheme,
@@ -23,7 +24,6 @@ const CombinedDefaultTheme = {
     ...PaperDefaultTheme.colors,
     ...NavigationDefaultTheme.colors,
     primary: '#FFB5A7',
-    accent: '#FFFFFF',
     background: '#FFFFFF'
 
 

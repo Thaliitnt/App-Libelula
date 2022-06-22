@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import { Appbar } from 'react-native-paper';
 
 function PerfilScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Perfil Screen</Text>
-    </View>
+    <Appbar.Header>
+      <Appbar.Content title="Perfil" />
+    </Appbar.Header>
   );
 }
 

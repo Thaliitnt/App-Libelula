@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView, Image, StyleSheet } from 'react-native';
-import { Button } from 'react-native-paper';
+import { Button, Appbar } from 'react-native-paper';
 import { MaterialIcons } from '@expo/vector-icons';
 
 export default function Screen({ route }) {

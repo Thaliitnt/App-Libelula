@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import { Appbar } from 'react-native-paper';
 
 function FavoritosScreen() {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Favoritos Screen</Text>
-    </View>
+    <Appbar.Header>
+      <Appbar.Content title="Favoritos" />
+    </Appbar.Header>
   );
 }
 
