@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
+import { Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 
 export default function Shoes(props) {

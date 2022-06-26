@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView, Image, StyleSheet } from 'react-native';
-import { Button, Appbar } from 'react-native-paper';
+import { Button } from 'react-native-paper';
 import { MaterialIcons } from '@expo/vector-icons';
 
 export default function Screen({ route }) {
@@ -28,6 +28,11 @@ export default function Screen({ route }) {
                 Aicionar ao carrinho
                 <MaterialIcons name="shopping-cart" size={21} color="#803A2D" />
             </Button>
+            <Text style={[style.titleDesc, { fontSize: 24 }]}> Detalhes</Text>
+            <Text style={[style.titleDeta, { fontSize: 24 }]}> 
+            Estoque
+            Material
+            Comprimento  </Text>
         </ScrollView >
     );
 }
@@ -47,6 +52,12 @@ const style = StyleSheet.create({
     },
     titleView: {
         alignSelf: 'flex-start'
+    },
+    titleDesc:{
+
+    },
+    titleDeta:{
+        flexDirection: "row"
     },
     button: {
         width: '75%',

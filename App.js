@@ -15,7 +15,7 @@ import FavoritosScreen from './screens/FavoritosScreen';
 import CarrinhoScreen from './screens/CarrinhoScreen';
 import PerfilScreen from './screens/PerfilScreen';
 import TabNavigator from './navigators/TabNavigator';
-import drawerNavigator from './navigators/drawerNavigator';
+//import drawerNavigator from './navigators/drawerNavigator';
 
 const CombinedDefaultTheme = {
   ...PaperDefaultTheme,
