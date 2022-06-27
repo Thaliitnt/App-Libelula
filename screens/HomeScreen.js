@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
-//import {Button, TextInput, Appbar, Searchbar  } from 'react-native-paper';
 
 
 import Shoes from '../src/components/Shoes'
@@ -19,6 +18,7 @@ function HomeScreen({ navigation }) {
       }>
       </FlatList >
     </View >
+
   );
 }
 
@@ -27,5 +27,6 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%'
   }
+
 })
 export default HomeScreen;

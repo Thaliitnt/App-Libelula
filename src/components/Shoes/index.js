@@ -1,22 +1,31 @@
 import React from 'react';
 import { Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
+import { Card, Title, IconButton } from 'react-native-paper';
 
 
 export default function Shoes(props) {
   return (
     <TouchableOpacity style={Style.container} onPress={props.onClick}>
-
-      <Image
-        source={props.img}
-        style={Style.shoesImg}
-      />
-      <Text style={Style.shoesText}>
-        {props.cost2}
-      </Text>
-      <Text style={Style.shoesTxtPreco}>
-        {props.cost}
-      </Text>
-    </TouchableOpacity>
+      <Card>
+        <Card.Cover source={props.img}
+          style={Style.shoesImg}
+        />
+        <Card.Content>
+          <Title style={Style.shoesText}>
+            {props.cost2}</Title>
+        </Card.Content>
+        <Card.Actions style={Style.actions}>
+          <Title style={Style.shoesTxtPreco}>
+            {props.cost}</Title>
+          <IconButton
+            style={Style.icon}
+            icon="heart-outline"
+            size={22}
+            onPress={() => console.log('Pressed')}
+          />
+        </Card.Actions>
+      </Card >
+    </TouchableOpacity >
   );
 }
 
@@ -24,7 +33,7 @@ const Style = StyleSheet.create({
   container: {
     paddingVertical: '10%',
     alingItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'space-around'
   },
   shoesImg: {
     width: 196,
@@ -35,5 +44,9 @@ const Style = StyleSheet.create({
   },
   shoesTxtPreco: {
     fontSize: 19,
+  },
+  actions: {
+    justifyContent: 'space-around',
+    padding: 0
   }
 })
