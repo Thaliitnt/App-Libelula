@@ -20,7 +20,7 @@ export default function Screen({ route }) {
             />
             <View style={style.titleView}>
                 <Text style={[style.title, { fontSize: 26 }]}>
-                    R$200,00
+                    {produto.preco}
                 </Text>
             </View>
 
@@ -29,10 +29,10 @@ export default function Screen({ route }) {
                 <MaterialIcons name="shopping-cart" size={21} color="#803A2D" />
             </Button>
             <Text style={[style.titleDesc, { fontSize: 24 }]}> Detalhes</Text>
-            <Text style={[style.titleDeta, { fontSize: 24 }]}> 
-            Estoque
-            Material
-            Comprimento  </Text>
+            <Text style={[style.titleDeta, { fontSize: 24 }]}>
+                Estoque
+                Material
+                Comprimento  </Text>
         </ScrollView >
     );
 }
@@ -53,10 +53,10 @@ const style = StyleSheet.create({
     titleView: {
         alignSelf: 'flex-start'
     },
-    titleDesc:{
+    titleDesc: {
 
     },
-    titleDeta:{
+    titleDeta: {
         flexDirection: "row"
     },
     button: {

@@ -20,6 +20,7 @@ export default function Shoes(props) {
           <IconButton
             style={Style.icon}
             icon="heart-outline"
+            color='#DD9562'
             size={22}
             onPress={() => console.log('Pressed')}
           />
