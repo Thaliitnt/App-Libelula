@@ -14,7 +14,7 @@ export default function Screen({ route }) {
 
             </View>
 
-            <Image source={require('../src/assets/pulseira.jpg')}
+            <Image source={{ uri: produto.foto }}
                 style={style.image}
                 resizeMode='cover'
             />
@@ -24,7 +24,10 @@ export default function Screen({ route }) {
                 </Text>
             </View>
 
-            <Button style={style.button} mode="contained" onPress={() => console.log('Pressed')}>
+            <Button style={style.button} mode="contained"
+                onPress={() => console.log('Pressed')}
+
+            >
                 Aicionar ao carrinho
                 <MaterialIcons name="shopping-cart" size={21} color="#803A2D" />
             </Button>
@@ -60,7 +63,7 @@ const style = StyleSheet.create({
         flexDirection: "row"
     },
     button: {
-        width: '75%',
+        width: '80%',
         textColor: '#803A2D',
     },
     scroll: {
