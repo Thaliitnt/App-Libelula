@@ -1,22 +1,22 @@
 [
     {
-        "nome": "Anel Coração",
+        "nome": "Kit Argolas",
         "preco": "R$ 70,00",
-        "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/anel.jpg?raw=true"
+        "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/brinco-argola.jpg?raw=true"
+    },
+    {
+        "nome": "Brinco Prata",
+        "preco": "R$ 150,00",
+        "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/brinco-de-milhoes.jpg?raw=true"
     },
     {
         "nome": "Relógio Feminino",
-        "preco": "R$ 200,00",
-        "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/pulseira.jpg?raw=true"
-    },
-    {
-        "nome": "Anel Coração",
-        "preco": "R$ 70,00",
+        "preco": "R$ 300,00",
         "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/bracelete.jpg?raw=true"
     },
     {
-        "nome": "Relógio Feminino",
-        "preco": "R$ 200,00",
+        "nome": "Pulseira Estrela",
+        "preco": "R$ 189,00",
         "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/pulseira.jpg?raw=true"
     },
     {
@@ -25,8 +25,8 @@
         "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/anel.jpg?raw=true"
     },
     {
-        "nome": "Relógio Feminino",
+        "nome": "Pulseira Coração",
         "preco": "R$ 200,00",
-        "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/pulseira.jpg?raw=true"
+        "foto": "https://github.com/Thaliitnt/App-Libelula/blob/master/src/assets/pulseira-coracao.jpg?raw=true"
     }
 ]
