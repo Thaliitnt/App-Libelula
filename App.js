@@ -5,6 +5,7 @@ import { Provider as PaperProvider, DefaultTheme as PaperDefaultTheme } from 're
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import TabNavigator from '../App-Libélula/navigators/TabNavigator';
+import telaLogin from '../App-Libélula/screens/telaLogin';
 
 
 
@@ -32,7 +33,7 @@ function App() {
         <Drawer.Navigator initialRouteName="Home">
 
           <Drawer.Screen name="Home" component={TabNavigator} />
-          {/* <Drawer.Screen name="Notifications" component={NotificationsScreen} / > */}
+          <Drawer.Screen name="Login" component={telaLogin} />
         </Drawer.Navigator>
 
       </NavigationContainer>
