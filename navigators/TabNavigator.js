@@ -1,30 +1,52 @@
 import React from 'react';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import HomeScreen from '../screens/HomeScreen';
-import DetailsScreen from '../screens/Details';
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import { FontAwesome } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
 
-const DetailsStackNavigator = () => {
-  const Stack = createNativeStackNavigator();
+import FavoritosScreen from '../screens/FavoritosScreen';
+import CarrinhoScreen from '../screens/CarrinhoScreen';
+import PerfilScreen from '../screens/PerfilScreen';
+import StackNavigator from '../navigators/StackNavigator';
 
-  return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} options={{
-        title: 'Início',
-        headerStyle: {
-          backgroundColor: '#FFB5A7',
-        },
-        headerTintColor: '#803A2D',
-      }} />
-      <Stack.Screen name="Details" component={DetailsScreen} options={{
-        title: 'Detalhes',
-        headerStyle: {
-          backgroundColor: '#FFB5A7',
-        },
-        headerTintColor: '#803A2D',
-      }} />
-    </Stack.Navigator>
-  );
+const Tab = createMaterialBottomTabNavigator();
+
+const TabNavigator = () => {
+    return (
+        < Tab.Navigator >
+            <Tab.Screen name="Home" component={StackNavigator} options={{
+                tabBarIcon: ({ focused, color }) => {
+                    return (
+                        <FontAwesome name="home" size={24} color={color} />
+
+                    )
+                }
+            }}
+            />
+
+            < Tab.Screen name="Favoritos" component={FavoritosScreen} options={{
+                tabBarIcon: ({ focused, color }) => {
+                    return (
+                        <FontAwesome name="heart" size={24} color={color} />);
+                }
+            }} />
+
+            < Tab.Screen name="Carrinho" component={CarrinhoScreen} options={{
+                tabBarIcon: ({ focused, color }) => {
+                    return (
+                        <MaterialIcons name="shopping-cart" size={24} color={color} />);
+                }
+            }} />
+
+            < Tab.Screen name="Perfil" component={PerfilScreen} options={{
+                tabBarIcon: ({ focused, color }) => {
+                    return (
+                        <FontAwesome name="user-circle" size={24} color={color} />);
+                }
+            }} />
+
+        </Tab.Navigator >
+    );
 };
 
-export default DetailsStackNavigator;
+export default TabNavigator;
