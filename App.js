@@ -1,11 +1,8 @@
 import React from 'react';
 import { NavigationContainer, DefaultTheme as NavigationDefaultTheme } from '@react-navigation/native';
-import { Provider as PaperProvider, DefaultTheme as PaperDefaultTheme } from 'react-native-paper'
+import { Provider as PaperProvider, DefaultTheme as PaperDefaultTheme } from 'react-native-paper';
 
-import { createDrawerNavigator } from '@react-navigation/drawer';
-
-import TabNavigator from '../App-Libélula/navigators/TabNavigator';
-import telaLogin from '../App-Libélula/screens/telaLogin';
+import DrawerNavigator from './navigators/DrawerNavigator';
 
 
 
@@ -23,21 +20,16 @@ const CombinedDefaultTheme = {
 };
 
 
-const Drawer = createDrawerNavigator();
-
 function App() {
   return (
     <PaperProvider theme={CombinedDefaultTheme}>
+
       <NavigationContainer theme={CombinedDefaultTheme}>
-
-        <Drawer.Navigator initialRouteName="Home">
-
-          <Drawer.Screen name="Home" component={TabNavigator} />
-          <Drawer.Screen name="Login" component={telaLogin} />
-        </Drawer.Navigator>
-
+        <DrawerNavigator />
       </NavigationContainer>
+
     </PaperProvider >
+
   );
 }
 

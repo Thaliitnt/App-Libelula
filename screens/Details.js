@@ -29,7 +29,7 @@ export default function Screen({ route }) {
 
             >
                 Aicionar ao carrinho
-                <MaterialIcons name="shopping-cart" size={21} color="#803A2D" />
+                <MaterialIcons name="shopping-cart" size={21} />
             </Button>
             <Text style={[style.titleDesc, { fontSize: 24 }]}> Detalhes</Text>
             <Text style={[style.titleDeta, { fontSize: 24 }]}>
@@ -50,7 +50,7 @@ const style = StyleSheet.create({
         height: 350
     },
     title: {
-        color: '#DD9562',
+
     },
     titleView: {
         alignSelf: 'flex-start'
@@ -59,7 +59,7 @@ const style = StyleSheet.create({
 
     },
     titleDeta: {
-        flexDirection: "row"
+        flexDirection: "column-reverse"
     },
     button: {
         width: '80%',
