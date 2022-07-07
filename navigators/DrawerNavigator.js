@@ -2,7 +2,6 @@ import React from 'react';
 
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import StackNavigator from '../navigators/StackNavigator';
 import TabNavigator from '../navigators/TabNavigator';
 import telaLogin from '../screens/telaLogin';
 
@@ -13,7 +12,11 @@ const DrawerNavigator = () => {
 
         <Drawer.Navigator initialRouteName="Home">
 
-            <Drawer.Screen name="Home" component={TabNavigator} />
+            <Drawer.Screen name="Home" component={TabNavigator} options={{
+        headerStyle: {
+          backgroundColor: '#FFB5A7',
+        }
+      }}/>
             <Drawer.Screen name="Login" component={telaLogin} />
 
         </Drawer.Navigator>
