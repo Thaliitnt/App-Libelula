@@ -10,7 +10,7 @@ const Drawer = createDrawerNavigator();
 const DrawerNavigator = () => {
     return (
 
-        <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Navigator screenOptions={{headerShown: false}} initialRouteName="Home">
 
             <Drawer.Screen name="Home" component={TabNavigator} options={{
         headerStyle: {
