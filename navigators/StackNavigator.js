@@ -9,20 +9,8 @@ const DetailsStackNavigator = () => {
 
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} options={{
-        title: 'Início',
-        headerStyle: {
-          backgroundColor: '#FFB5A7',
-        },
-        headerTintColor: '#803A2D',
-      }} />
-      <Stack.Screen name="Details" component={DetailsScreen} options={{
-        title: 'Detalhes',
-        headerStyle: {
-          backgroundColor: '#FFB5A7',
-        },
-        headerTintColor: '#803A2D',
-      }} />
+      <Stack.Screen name="Home" component={HomeScreen}  options={{headerShown: false}}/>
+      <Stack.Screen name="Details" component={DetailsScreen} options={{headerShown: true}}/>
     </Stack.Navigator>
   );
 };
