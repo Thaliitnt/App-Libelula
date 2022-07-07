@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Text} from 'react-native'
+import { Appbar } from 'react-native-paper';
 
 function CarrinhoScreen() {
   return (
-    <View>
-<Text> Carrinho Vazio </Text>
-    </View>
+  <Appbar.Header>
+    <Appbar.Content title="Carrinho" />
+  </Appbar.Header>
   );
 }
 
