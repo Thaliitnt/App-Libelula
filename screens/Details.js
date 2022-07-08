@@ -19,23 +19,21 @@ export default function Screen({ route }) {
                 resizeMode='cover'
             />
             <View style={style.titleView}>
-                <Text style={[style.title, { fontSize: 26 }]}>
-                    {produto.preco}
+                <Text style={[style.title, { fontSize: 26 },{padding: 24}]}>
+                 {produto.preco}                              <MaterialIcons name="favorite-border" size={28} color="#FFB5A7" />
                 </Text>
+                
             </View>
 
-            <Button style={style.button} mode="contained"
-                onPress={() => console.log('Pressed')}
 
-            >
-                Aicionar ao carrinho
-                <MaterialIcons name="shopping-cart" size={21} />
+            <Button style={[style.button, {padding: 5}]} mode="contained"
+                onPress={() => console.log('Pressed')}>
+                Adicionar ao carrinho      <MaterialIcons name="shopping-cart" size={24} />
             </Button>
-            <Text style={[style.titleDesc, { fontSize: 24 }]}> Detalhes</Text>
-            <Text style={[style.titleDeta, { fontSize: 24 }]}>
-                Estoque
-                Material
-                Comprimento  </Text>
+            <Text style={[style.titleDesc, { fontSize: 24 }, {padding: 24}]}> Detalhes</Text>
+            <Text style={[style.titleDeta, { fontSize: 18 }]}>Estoque                               22</Text>
+            <Text style={[style.titleDeta, { fontSize: 18 }]}>Material                           Prata</Text>
+            <Text style={[style.titleDeta, { fontSize: 18 }]}> Comprimento                 25cm</Text>
         </ScrollView >
     );
 }
