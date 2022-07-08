@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import { Appbar } from 'react-native-paper';
 
 function FavoritosScreen() {
   return (
-    <View>
-<Text> Você ainda não tem produtos Favoritos</Text>
-    </View>
+  <Appbar.Header>
+    <Appbar.Content title="Favoritos" />
+  </Appbar.Header>
   );
 }
 
